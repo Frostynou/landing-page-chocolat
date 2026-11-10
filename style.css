@@ -1,0 +1,330 @@
+/* le css dans le header */
+nav {
+    padding: 15px;
+}
+
+/* le css pour positionner tout les élèments de nav sur la même ligne  */
+#element-nav-position {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/*css pour la taille du logo */
+.logo {
+    display: flex;
+    width: 15vh;
+    height: 15vh;
+    margin-left: 15vh;
+}
+
+/* Css dans le nav pour mettre tout les élèments de la liste sur une même ligne */
+#liste-navigation {
+    display: flex;
+    
+    justify-content: center;
+    gap: 5vh;
+    align-items: center;
+    margin-right: 15vh;    
+
+}
+
+
+nav ul {
+    gap: 1%;
+}
+
+/* pour enlever le sous-lignement de tout les élèments de la liste*/
+nav ul a {
+
+    color: black;
+    text-decoration: none;
+
+}
+
+/* le css pour le lien ayant le nom "contact */
+#contact {
+    padding: 15px 45px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    border-radius: 2px;
+   
+}
+
+/* css pour les formes des boutons */
+.bouton{
+    border:2px solid black;
+    padding: 15px 40px;
+}
+
+/* css pour le bouton cta 1 */
+.cta-1{
+    background-color: black;
+    color: white;
+}
+
+/* css pour le bouton cta 2 */
+.cta-2{
+    background-color: transparent;
+    color: black;
+}
+
+/* le css pour tte la section */
+.section-porte-taille{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+    background-color: #80808017;
+}
+
+/* La taille de la div qui contient l'image */
+#porte-image {
+    width: 50%;
+    height: 100%;
+}
+
+/* La taille de l'image par rapport à la div*/
+#porte-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* id pour positionner le div qui contient le texte 1 */
+#div-titre-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-left: 9%;
+}
+
+/* la taille de la balise h1 */
+h1{
+    font-size: 250%;
+   
+}
+
+/* la taille des sous titre */
+.p-mini{
+    
+    font-size: 80%;
+
+}
+
+/* pour positionner les boutons cta */
+#cta-bouton-position{
+    display: flex;
+    gap:20px;
+}
+
+/* css pour le bouton appeler à l'action */
+.bouton-action{
+    border:2px solid black;
+    padding: 5px 0px;
+}
+
+/* css pour la position de la div contenent le titre promesse */
+#Promesse-position{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap:20px;
+    
+
+}
+
+/* css pour définir la taille de toute els balises h2 */
+h2{
+    font-size: 200%;
+}
+/* css pour la taille du paragraphe dans la section promesse */
+#Promesse-position p{
+    width:65%;
+    margin-bottom: 20px;
+}
+/* 
+/* définir une taille pour la div qui contient l'image */
+#promesse-image {
+    width: 45%;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* selectionne l'image pour définir sa taille */
+#promesse-image img {
+    width: 60%;
+    height: 90%;
+    object-fit: cover;
+    display: block;
+}
+
+/* la taille de la section */
+#section-promesse {
+    
+    padding: 5%;
+    height: auto;
+}
+
+/* css pour la taille de la div qui contient l'image et la liste */
+.section-promesse-taille{
+    display: flex;
+    align-items: start;
+    height: 280px;
+    
+    
+}
+
+/* css pour la liste qui se trouve dans la section promesse */
+#liste-promesse{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    gap:35px;
+}
+
+/* css pour la taille du bouton */
+#liste-promesse button{
+    width: 109px;
+}
+
+/* css pour la section ayant comme titre "service proposées" */
+#section-service-propose{
+    background-color: #fdeeff;
+    padding: 70px;
+    
+}
+
+/*pour positionner les articles  */
+section article {
+    display: flex;
+    
+    width: 23%;
+}
+
+
+/* la position des articles */
+#article-postion{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* pour le titre h2 qui se trouve dans la section */
+#section-service-propose h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+
+/* les articles*/
+article {
+    background-color: white;
+    width: 24vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/* L'image qui se trouve dans l'article*/
+article img {
+    width: 100%;
+    height: 224px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Le titre qui se trouve dans l'article */
+.article-texte {
+    text-align: center;
+    margin: 20px 0 14px;
+}
+
+/* Le paragraphe qui se trouve dans l'article*/
+.paragraphe-article {
+    margin: 0 15px;
+    text-align: center;
+}
+
+/* Le bouton qui se trouve dans l'article*/
+.bouton-article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+   
+    width: 45%;
+    padding: 15px 8px;
+    margin: 40px auto 10px;
+}
+
+
+#section-realisation{
+    padding: 70px;
+}
+
+
+/* pour position le titre réalisation */
+.section-realisation h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+/* pour placer les élèments sur la mm ligne */
+#div-realisation{
+    display: flex;
+
+}
+
+/* la div qui contient mon image et le texte */
+#realisation-image{
+    width: 45%;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    margin-top:30px;
+
+}
+
+/* pour modifier la taille de l'image */
+#realisation-image img{
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    display: block;
+}
+
+/* tout le contenue textuel de la div  */
+#realisation-text{
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    gap:20px;
+}
+
+/* la taille du paragraphe dans realisation */
+#realisation-text p{
+    width: 400px;
+
+}
+/* le titre h3 dans la section realisation */
+#realisation-text h3{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 20px;
+}
