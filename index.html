@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reseat.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>Architecture d'intérieur</title>
 </head>
 
@@ -13,22 +15,22 @@
     <header>
         <!-- la navigation dans mon header -->
         <nav>
-            <div id="element-nav-position">
+            <div data-aos="flip-down" id="element-nav-position">
                 <!-- le logo qui se trouve dans la nav -->
                 <a href="#"><img class="logo" src="images\logo.png" alt="Le logo de la page web" /></a>
 
                 <!-- la liste d'élément qui se trouve dans la liste -->
                 <ul id="liste-navigation">
-                    <a href="#">
+                    <a href="#section-service-propose">
                         <li>Prestations Proposees</li>
                     </a>
-                    <a href="#">
+                    <a href="#projet">
                         <li>Projets</li>
                     </a>
-                    <a href="#">
+                    <a href="#témoignage">
                         <li>Temoignages</li>
                     </a>
-                    <a id="contact" href="#">
+                    <a id="contact" href="#lien-contact">
                         <li>Contact</li>
                     </a>
                 </ul>
@@ -39,18 +41,18 @@
         <!-- une section pour la div et l'image -->
         <section class="section-porte-taille">
             <!-- la première div avec le titre 1, le sous titre et les boutons cta -->
-            <div id="div-titre-1">
+            <div data-aos="flip-down" id="div-titre-1">
 
                 <h1>Clémence Rivière Studio</h1>
                 <p class="p-mini">Révéler le potentiel de chaque espace</p>
                 <div id="cta-bouton-position">
-                    <button class="bouton cta-1" type="button">CTA 1</button>
-                    <button class="bouton cta-2" type="button">CTA 2</button>
+                    <button class="bouton cta-1" type="button">Prendre rendez-vous</button>
+                    <button class="bouton cta-2" type="button">Voir mes réalisations</button>
                 </div>
             </div>
 
             <!-- une deuxième div avec seulement l'image -->
-            <div id="porte-image">
+            <div   data-aos="fade-down-left" id="porte-image">
                 <img src="images\jean-luc-benazet-oOvzE2L-n1A-unsplash.jpg" alt="image d'une architecture d'intérieur">
             </div>
 
@@ -59,207 +61,309 @@
         <!-- deuxième section  -->
         <section id="section-promesse">
             <div id="Promesse-position">
-                <h2>Promesse</h2>
-                <p class="p-mini">Lorem ipsum dolor sit amet consectetur. Elementum nisl duis tortor sed. Suspendisse lobortis vitae quis vehicula
-                pellentesque sit id. Urna posuere consequat velit vulputate faucibus pretium arcu accumsan sit. Vel venenatis sapien.</p>
-                </div>
-         <div class="section-promesse-taille ">
-            <div id="promesse-image">
-                <img src="images\promesses-pexels-shkrabaanthony-6322392.jpg"
-                    alt="image de 2 personnes qui travaillent ensemble">
+                <h2>Une approche centrée sur vos besoins et votre bien-être</h2>
+                <p class="p-mini"></p>
             </div>
-            
-            <!-- la liste qui se trouve dans promesse -->
-                    <div id="liste-promesse">
-                        <ul id="liste-promesse">
+            <div class="section-promesse-taille ">
+                <div id="promesse-image">
+                    <img src="images\promesses-pexels-shkrabaanthony-6322392.jpg"
+                        alt="image de 2 personnes qui travaillent ensemble">
+                </div>
 
-                            <li>Lorem ipsum dolor sit amet consectetur.
-                            Elementum nisl duis tortor sed
-                        </li>                                      
-                            <li>Lorem ipsum dolor sit amet consectetur.
-                            Elementum nisl duis tortor sed</li>
-                                            
-                            <li>Lorem ipsum dolor sit amet consectetur.
-                            lementum nisl duis tortor sed</li>
-                                           
-                            <li>Lorem ipsum dolor sit amet consectetur.
-                            Elementum nisl duis tortor sed</li>
-                   
-                        </ul>
-                    
+                <!-- la liste qui se trouve dans promesse -->
+                <div  data-aos="zoom-out-up" id="liste-promesse">
+                    <ul class="element-liste-promesse">
+
+                        <li><span class="coche">✓</span>Une approche humaine et créative, centrée sur vos usages et vos
+                            envies
+                        </li>
+                        <li><span class="coche">✓</span>Des matériaux durables et des fournisseurs locaux privilégiés
+                        </li>
+
+                        <li><span class="coche">✓</span>Une expertise esthétique alliée à une rigueur technique</li>
+
+                        <li><span class="coche">✓</span>Un accompagnement complet, du croquis à la réception du chantier
+                        </li>
+
+                    </ul>
+
                     <button class="bouton-action cta-1" type="button">Appel à l'action</button>
-                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Trosième section avec le titre contenant service proposées -->
-         <section id="section-service-propose">
-            
-                <h2>Services proposés</h2>
-                <!-- tout les articles -->
-                 <div id="article-postion">
-                <article>
-                <img src="assets/assets/shoes-2.jpg" alt="Une chaussure" />
-                <div>
-                
-                    <div class="marque">
-                        <h3 class="article-texte">titre</h3>
-                        
+        <section id="section-service-propose">
+
+            <h2>Nos prestations</h2>
+            <!-- tout les articles -->
+            <div id="article-postion">
+                <article data-aos="zoom-out-up">
+                    <img src="images\renovation-pexels-scene-design-144978225-14615702.jpg" alt="Rénovation" />
+                    <div>
+
+                        <div class="marque">
+                            <h3 class="article-texte">Rénovation d'appartements</h3>
+
+                        </div>
+                        <p class="paragraphe-article">Repenser la circulation, les volumes et la lumière pour créer des
+                            intérieurs élégants, fonctionnels et chaleureux.</p>
+
                     </div>
-                    <p class="paragraphe-article">Lorem ipsum dolar sit amet consectetur.
-                    Lorem ipsum dolar sit amet consectetur.</p>
+                    <button class="bouton-article ">Voir</button>
 
-                </div>
-                <button class="bouton-article ">CTA custom</button >
-            
-            </article>
+                </article>
 
-             <article>
-                <img src="assets/assets/shoes-2.jpg" alt="Une chaussure" />
-                <div>
-                
-                    <div class="marque">
-                        <h3 class="article-texte">titre</h3>
-                        
+                <article data-aos="zoom-out-up">
+                    <img src="images\amenagement-pexels-shkrabaanthony-5292237.jpg" alt="amenagement" />
+                    <div>
+
+                        <div class="marque">
+                            <h3 class="article-texte">Aménagement sur mesure</h3>
+
+                        </div>
+                        <p class="paragraphe-article">Conception de mobilier intégré et d'espaces adaptés à vos besoins
+                            : bibliothèques, rangements, cuisines, bureaux...</p>
+
                     </div>
-                    <p class="paragraphe-article">Lorem ipsum dolar sit amet consectetur.
-                    Lorem ipsum dolar sit amet consectetur.</p>
+                    <button class="bouton-article ">Voir</button>
 
-                </div>
-                <button class="bouton-article ">CTA custom</button >
-            
-            </article>
+                </article>
 
 
-             <article>
-                <img src="assets/assets/shoes-2.jpg" alt="Une chaussure" />
-                <div>
-                
-                    <div class="marque">
-                        <h3 class="article-texte">titre</h3>
-                        
+                <article  data-aos="zoom-out-up">
+                    <img src="images\decoration-interieur-pexels-cottonbro-6583355.jpg" alt="Une table" />
+                    <div>
+
+                        <div class="marque">
+                            <h3 class="article-texte">Décoration intérieure</h3>
+
+                        </div>
+                        <p class="paragraphe-article">Sélection de matériaux, textures et couleurs pour harmoniser votre
+                            intérieur et lui donner une identité unique.</p>
+
                     </div>
-                    <p class="paragraphe-article">Lorem ipsum dolar sit amet consectetur.
-                    Lorem ipsum dolar sit amet consectetur.</p>
+                    <button class="bouton-article ">Voir</button>
 
-                </div>
-                <button class="bouton-article ">CTA custom</button >
-            
-            </article>
+                </article>
             </div>
         </section>
 
         <!-- 4ème section avec le titre réalisation  -->
-        <section class="section-realisation">
-             <h2>Réalisations</h2>
-           <div id="div-realisation">
-            <!-- div pour l'image -->
-            <div id="realisation-image">
-                <img src="images\promesses-pexels-shkrabaanthony-6322392.jpg"
-                    alt="image de 2 personnes qui travaillent ensemble">
-            </div>
-            <!-- div pour le texte -->
-            <div id="realisation-text">
-               
-                <h3>Titre</h3>
-                <p class="p-mini">Lorem ipsum dolor sit amet consectetur. Pulvinar arcu mattis in atsodales condimentum. Gravida arcu aliquet rutrum erat varius. Tellus felis sed pretium in egestas.</p>
+        <section id="projet" class="section-realisation">
+            <h2>Projets</h2>
+            <div id="div-realisation">
+                <!-- div pour l'image -->
+                <div data-aos="zoom-out-right" id="realisation-image">
+                    <img src="images\im3rd-media-FJZtZldA-uE-unsplash.jpg"
+                        alt="image d'une cuisine">
                 </div>
-         
-            
-        </div> 
-       
-           <section class="section-realisation">
-             
-           <div id="div-realisation">
-            <!-- div pour l'image -->
-           
-            <!-- div pour le texte -->
-            <div id="realisation-text">
-               
-                <h3>Titre</h3>
-                <p class="p-mini">Lorem ipsum dolor sit amet consectetur. Pulvinar arcu mattis in atsodales condimentum. Gravida arcu aliquet rutrum erat varius. Tellus felis sed pretium in egestas.</p>
+                <!-- div pour le texte -->
+                <div id="realisation-text">
+
+                    <h3>Appartement Haussmannien – Lyon 6e</h3>
+                    <p class="p-mini">Rénovation complète d’un appartement de 120 m² : ouverture des espaces, mise en
+                        valeur des moulures et création d’une cuisine contemporaine contrastée.</p>
                 </div>
-                 <div id="realisation-image">
-                <img src="images\promesses-pexels-shkrabaanthony-6322392.jpg"
-                    alt="image de 2 personnes qui travaillent ensemble">
+
+
             </div>
-         
-            
-        </div> 
-            
-          <!-- 4ème section avec le titre réalisation  -->
-        
-           <div id="div-realisation">
-            <!-- div pour l'image -->
-            <div id="realisation-image">
-                <img src="images\promesses-pexels-shkrabaanthony-6322392.jpg"
-                    alt="image de 2 personnes qui travaillent ensemble">
-            </div>
-            <!-- div pour le texte -->
-            <div id="realisation-text">
-               
-                <h3>Titre</h3>
-                <p class="p-mini">Lorem ipsum dolor sit amet consectetur. Pulvinar arcu mattis in atsodales condimentum. Gravida arcu aliquet rutrum erat varius. Tellus felis sed pretium in egestas.</p>
+            <!-- section pour la deuxième div -->
+            <section class="section-realisation div-2-realisation">
+
+                <div id="div-realisation" class="div-2-realisation-position">
+
+                    <!-- div pour l'image -->
+
+                    <!-- div pour le texte -->
+                    <!-- deuxième div -->
+                    <div id="realisation-text">
+
+                        <h3>Maison contemporaine – Annecy</h3>
+                        <p class="p-mini">Aménagement intérieur complet : création d’un grand espace de vie traversant,
+                            matériaux naturels et mobilier sur mesure en bois clair.</p>
+                    </div>
+                    <div data-aos="zoom-out-left" id="realisation-image">
+                        <img src="images/couverture-dada-design-9KGB4HspwsM-unsplash.jpg"
+                            alt="image d'une grande salle avec des fauteuils">
+                    </div>
+
+
                 </div>
-         
-            
-        </div> 
-          
-        </section>
+            </section>
+            <section class="section-realisation">
+                <div data-aos="zoom-out-right" id="div-realisation">
+                    <!-- div pour l'image -->
+                    <div id="realisation-image">
+                        <img src="images\hakim-menikh-lcoAS3tYlx4-unsplash.jpg"
+                            alt="image du studio">
+                    </div>
+                    <!-- troisième div -->
+                    <div id="realisation-text">
+
+                        <h3> Studio étudiant – Villeurbanne</h3>
+                        <p class="p-mini"> Optimisation d’un petit espace de 25 m² avec mobilier modulable et ambiance
+                            minimaliste chaleureuse.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- section pour la deuxième div -->
+            <section class="section-realisation div-2-realisation">
+
+                <div id="div-realisation" class="div-2-realisation-position">
+
+                    <!-- div pour l'image -->
+
+                    <!-- div pour le texte -->
+                    <!-- deuxième div -->
+                    <div id="realisation-text">
+
+                        <h3>Boutique artisanale – Croix-Rousse</h3>
+                        <p class="p-mini">Transformation d’un ancien atelier en boutique lumineuse : jeu de textures
+                            entre béton ciré, bois brut et verrières d’atelier.</p>
+                    </div>
+                    <div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500" id="realisation-image">
+                        <img src="images\tem-rysh-F6-U5fGAOik-unsplash.jpg"
+                            alt="image de 2 personnes qui travaillent ensemble">
+                    </div>
+
+
+                </div>
+            </section>
+
+            <!-- section pour la partie témoignages -->
+            <section id="témoignage" class="section-realisation espacement-témoignages">
+                <h2>Témoignages</h2>
+                <div  data-aos="fade-right"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine" id="témoignage-position">
+
+                    <button class="bouton-fleche-precedent" id="precedent" type="button">
+                        ←
+                    </button>
+                    <!-- article pour Mathilde  -->
+                    <article  class="article-color ">
+                        <div class="article-contenue">
+                            <!-- le texte dans l'article -->
+                            <p class="p-mini">Clémence a su repenser notre espace avec beaucoup d’intelligence et de
+                                goût. Le résultat est à la fois pratique et sublime.</p>
+
+                            <!-- la div pour l'image -->
+                            <div class="image-information-position">
+                                <img class="image-témoignages" src="images\tête-personne-femme.avif">
+                                <div class="information-témoignages-article">
+                                    <h4>Mathilde Moon</h4>
+                                    <p class="p-mini">Rénovation d'appartemen</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- article de oliver-->
+                    <article class="article-color">
+                        <div class="article-contenue">
+                            <!-- le texte dans l'article -->
+                            <p class="p-mini"> Un vrai sens du détail et une belle écoute de nos besoins. Les meubles
+                                sur mesure sont parfaits et l’espace respire.<br><br></p>
+
+                            <!-- la div pour l'image -->
+                            <div class="image-information-position">
+                                <img class="image-témoignages" src="/tête-personne.jpg">
+                                <div class="information-témoignages-article">
+                                    <h4>Olivier Martin</h4>
+                                    <p class="p-mini">Aménagement de bureau</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <!-- article de sonia -->
+                    <article class="article-color">
+                        <div class="article-contenue">
+                            <!-- le texte dans l'article -->
+                            <p class="p-mini">J’adore la nouvelle ambiance de mon salon : couleurs apaisantes, lumière
+                                retravaillée, et des matières nobles. Je recommande à 100 %.</p>
+
+                            <!-- la div pour l'image -->
+                            <div class="image-information-position">
+                                <img class="image-témoignages" src="images\tête-personne-sonia.avif">
+                                <div class="information-témoignages-article">
+                                    <h4>Sonia Jade</h4>
+                                    <p class="p-mini">Décoration intérieure</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <button class="bouton-fleche-suivant" id="precedent" type="button">
+                        →
+                    </button>
+                </div>
+
+            </section>
+
     </main>
 
-    <fotoer></fotoer>
+    <footer>
+
+        <!-- section pour le footer -->
+        <section id="lien-contact" class="div-2-realisation">
+
+            <!-- div pour le texte -->
+            <div data-aos="zoom-out-up" id="footer-texte">
+
+                <h3>Prêts à travailler ensemble ?</h3>
+                <p class="p-mini">
+                    Une idée, un projet, une envie de collaboration ?
+                    Contactez-nous, nous serons ravis d’en discuter et de voir
+                    comment avancer ensemble.<br>
+                    Laissez votre contact téléphonique et je vous rappellerai</p>
+
+                <!-- les logos pour acceder aux réseaux de la page -->
+                <div data-aos="zoom-in-left" id="réseaux-sociaux">
+                    <a href="https://discord.com" target="_blank"><img class="footer-réseaux" src="/images/discord.jpg"
+                            alt="Discord"></a>
+
+                    <a href="https://www.facebook.com" target="_blank"><img class="footer-réseaux"
+                            src="/images/facebook.png" alt="facebook"></a>
+
+                    <a href="https://dribbble.com" target="_blank"><img class="footer-réseaux" src="/images/dribble.png"
+                            alt="dribbble"></a>
+
+                    <a href="https://www.instagram.com" target="_blank"><img class="footer-réseaux"
+                            src="/images/instagram.png"></a>
+
+                    <a href="https://www.behance.net" target="_blank"><img class="footer-réseaux"
+                            src="/images/behance.png"></a>
+
+
+
+                </div>
+            </div>
+
+            <!-- une div pour le bouton et les inputs-->
+            <div data-aos="zoom-out-up" id="input-espacement">
+                <input class="taille-input" type="text" placeholder="Nom">
+                <input class="taille-input" type="text" placeholder="Téléphone">
+                <input class="taille-input" type="text" placeholder="email">
+                <input class="taille-input" type="text" placeholder="message">
+                <button class="bouton cta-1" type="button">Envoyer</button>
+
+            </div>
+
+
+
+        </section>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
-
-<!-- 
-Nom Atelier: Clémence Rivière Studio
-Sous Titre: Révéler le potentiel de chaque espace
-Texte Appel: Prendre rendez-vous
-Text Appel Secondaire: Voir mes réalisations
-
-Identite Marque:
-Couleur Principale: #D8935C
-Couleur Texte: #2E2A26
-Typographie Titres: Cormorant Garamond
-Typographie Corps: Manrope
-
-Promesses Clients:
-Titre: Une approche centrée sur vos besoins et votre bien-être
-Liste:
-  • Une approche humaine et créative, centrée sur vos usages et vos envies
-  • Des matériaux durables et des fournisseurs locaux privilégiés
-  • Une expertise esthétique alliée à une rigueur technique
-  • Un accompagnement complet, du croquis à la réception du chantier
-
-Prestations Proposees:
-Titre: Nos prestations
-Liste:
-Intitule: Rénovation d'appartements
-Details: Repenser la circulation, les volumes et la lumière pour créer des intérieurs élégants, fonctionnels et chaleureux.
-Intitule: Aménagement sur mesure
-Details: Conception de mobilier intégré et d'espaces adaptés à vos besoins : bibliothèques, rangements, cuisines, bureaux...
-Intitule: Décoration intérieure
-Details: Sélection de matériaux, textures et couleurs pour harmoniser votre intérieur et lui donner une identité unique.
-
-Projets:
-Titre Projet: Appartement Haussmannien – Lyon 6e
-Description Projet: Rénovation complète d’un appartement de 120 m² : ouverture des espaces, mise en valeur des moulures et création d’une cuisine contemporaine contrastée.
-Titre Projet: Maison contemporaine – Annecy
-Description Projet: Aménagement intérieur complet : création d’un grand espace de vie traversant, matériaux naturels et mobilier sur mesure en bois clair.
-Titre Projet: Studio étudiant – Villeurbanne
-Description Projet: Optimisation d’un petit espace de 25 m² avec mobilier modulable et ambiance minimaliste chaleureuse.
-Titre Projet: Boutique artisanale – Croix-Rousse
-Description Projet: Transformation d’un ancien atelier en boutique lumineuse : jeu de textures entre béton ciré, bois brut et verrières d’atelier.
-
-Temoignages:
-Prenom: Mathilde
-Type Mission: Rénovation d'appartement
-Commentaire: Clémence a su repenser notre espace avec beaucoup d’intelligence et de goût. Le résultat est à la fois pratique et sublime.
-Prenom: Olivier
-Type Mission: Aménagement de bureau
-Commentaire: Un vrai sens du détail et une belle écoute de nos besoins. Les meubles sur mesure sont parfaits et l’espace respire.
-Prenom: Sonia
-Type Mission: Décoration intérieure
-Commentaire: J’adore la nouvelle ambiance de mon salon : couleurs apaisantes, lumière retravaillée, et des matières nobles. Je recommande à 100 %. -->
